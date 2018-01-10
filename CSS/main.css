@@ -1,0 +1,141 @@
+/****Brand Name********/
+#brand-name {
+    font-family: 'Caveat Brush', cursive, serif;
+    font-size: 35px;
+}
+
+/****Headings******/
+h2, h5 {
+    font-family: 'Donegal One', 'Book Antiqua', Palatino, serif;
+    margin-top: 10px;
+    color: black;
+}
+
+p, ul li, form label, form button, a {
+    font-family: 'PT Sans', helvetica, arial, sans-serif;
+    color: black;
+}
+
+.navbar {
+    padding-top: 10px;
+}
+
+nav {
+    background-color: #60BF2D;
+}
+
+.nav-item {
+    font-family: 'Donegal One', 'Book Antiqua', Palatino, serif;
+    font-size: 20px;
+}
+
+/*****Body*************************/
+body {
+    background-color: #9EFF65;
+    padding-bottom: 70px;
+    
+}
+
+.jumbotron-fluid {
+/*    background-color: #37CC37;*/
+    background-image: url("../IMG/environment.jpg"); /*https://industry.airliquide.com.au/sites/industry_au/files/styles/web_page_cover/public/2016/12/19/environment.jpg?itok=BW6BZVmF*/
+    background-size: cover;
+    margin-top: 0px;
+/*    padding-right: 60px;*/
+}
+
+.display-3 {
+    margin: -10px 0 5px 15px;
+}
+
+/*****Jumbotron paragraph********/
+.lead {
+    font: bold 20px;
+    max-width: 700px; 
+    padding: 10px 25px 5px 15px;
+}
+
+/*******Blockquote********/
+.blockquote {
+    font-size: 20px;
+    margin: 5px 10px 5px 15px;
+}
+
+/***IMAGES HOME PAGE*****/
+.img-fluid{
+    border-radius: 50%;
+}
+
+/***Image caption home page*****/
+.caption {
+    margin-top: 10px;
+}
+
+/*****Cards*******/
+.card {
+    background-color: #30E80C;
+    border-radius: 25px;
+    margin: 10px 10px;
+}
+
+/*****How to help heading*****/
+#tips{
+    margin: 10px 5px 5px 10px;
+}
+/****Card titlles******/
+h5 {
+    font-size: 20px;
+}
+
+ul li {
+    font-size: 15px;
+}
+
+/****Card Images*****/
+.card-img-top {
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+/***Map**************/
+#map {
+    height: 300px;
+    width: auto;
+}
+
+/***Form************/
+.border-class {
+    border: 2px solid;
+    padding: 10px;
+    background-color: #30E80C;
+}
+
+form label, form button {
+    font-size: 20px;
+}
+
+/****Footer********/
+.footer {
+    background-color: #60BF2D;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+}
+
+/*****Social Media List Items******/
+.list-unstyled > .social {
+    display: inline-block;
+}
+
+/****Social Media Icons***********/
+.social {
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+/****Copyright***********/
+#copyright{
+    margin: 15px 30px 10px 20px;
+}

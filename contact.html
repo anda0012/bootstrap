@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Contact Us</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="bootstrap-4.0.0-beta.3-dist/css/bootstrap.css">
+
+    <link rel="stylesheet" href="iconic-everything-1.9.0/font/css/iconic-bootstrap.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Caveat+Brush|Donegal+One|PT+Sans" rel="stylesheet">
+
+    <link rel="stylesheet" href="CSS/main.css">
+
+</head>
+
+<body>
+
+    <!--******Nav Bar********************************************-->
+
+    <nav class="navbar sticky-top navbar-expand-sm navbar-light bg-inverse">
+
+        <div class="navbar-header">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsemenu" aria-controls="collapsemenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+
+        <div class="collapse navbar-collapse" id="collapsemenu">
+            <ul class="navbar-nav mr-auto">
+                <a class="navbar-brand" href="#" id="brand-name">Sustain-it</a>
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="help.html">How to Help</a></li>
+                 <li class="nav-item active"><a class="nav-link" href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--*********************Main Content****************************************-->
+
+    <div class="container">
+        <main>
+
+            <h2>Find Us</h2>
+
+        </main>
+
+        <!--***Map********************-->
+        <div id="map"></div>
+
+    </div>
+
+    <!--******Form****************-->
+
+    <div class="container">
+
+        <h2>Contact Us</h2>
+
+        <form class="border-class">
+            <div class="row">
+                <div class="col">
+                    <label for="form-first-name">First Name</label>
+                    <input type="text" class="form-control" id="form-first-name" placeholder="First Name">
+                </div>
+                <div class="col">
+                    <label for="form-last-name">Last Name</label>
+                    <input type="text" class="form-control" id="form-last-name" placeholder="Last Name">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="form-email">Email address</label>
+                <input type="email" class="form-control" id="form-email" placeholder="name@example.com">
+            </div>
+            <div class="form-group">
+                <label for="form-text-area">Send us a message!</label>
+                <textarea class="form-control" id="form-text-area" rows="3" placeholder="Say something"></textarea>
+            </div>
+
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="newsletter">
+                <label class="form-check-label" for="newsletter">Receive the bi-monthly newsletter</label>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+     <!--****Footer************-->
+    
+    <div class="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <ul class="list-unstyled">
+                    <li class="social"><a href="https://twitter.com" target="_blank"><span class="iconic iconic-social-twitter iconic-md" title="social twitter" aria-hidden="true"></span></a></li>
+
+                    <li class="social"><a href="https://facebook.com" target="_blank"><span class="iconic iconic-social-facebook iconic-md" title="social facebook" aria-hidden="true"></span></a></li>
+
+                    <li class="social"><a href="https://instagram.com" target="_blank"><span class="iconic iconic-social-instagram iconic-md" title="social instagram" aria-hidden="true"></span></a></li>
+
+                    <li class="social"><a href="https://pinterest.com" target="_blank"><span class="iconic iconic-social-pinterest iconic-md" title="social pinterest" aria-hidden="true"></span></a></li>
+                </ul>
+                <div class="row">
+                    <p id="copyright">&copy;<time datetime="2018">2018</time> Deka Andad</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--*****Script Tags**********-->
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+
+    <script>
+        function initMap() {
+            var location = {
+                lat: 45.349,
+                lng: -75.760
+            };
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 15,
+                center: location
+            });
+            var marker = new google.maps.Marker({
+                position: location,
+                map: map
+            });
+        }
+
+    </script>
+
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBw2eKxDKq8BTm-nXV9VD9VdG56cFfDhMk&callback=initMap">
+    </script>
+
+    <script scr="js/main.js"></script>
+
+</body>
+
+</html>
